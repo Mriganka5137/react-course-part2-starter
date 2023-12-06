@@ -14,7 +14,7 @@ interface PostQuery {
 const usePosts = (query: PostQuery) =>
   useInfiniteQuery({
     queryKey: ["posts", query],
-    queryFn: ({ pageParam = 1 }) =>
+    queryFn: ({ pageParam }) =>
       axios
         .get<Post[]>("https://jsonplaceholder.typicode.com/posts", {
           params: {
