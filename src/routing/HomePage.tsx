@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
-      <p>
+      <p className="paragraph">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt,
         mollitia!
       </p>
